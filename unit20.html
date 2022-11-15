@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Уроки Лущенко</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h1>Урок от Александра Лущенко</h1>
+            <p class="hello">unit 20</p>
+            <p>События клавиатуры в JavaScript</p>
+        </div>
+    </header>
+    <nav>
+        <ul class="nav__list">
+            <li class="nav__page dis__page"><a href="#" class="nav__href">1.Стартуем и пишем первую программу</a></li>
+            <li class="nav__page dis__page"><a href="#" class="nav__href">2.Основы ввода данных</a></li>
+            <li class="nav__page"><a href="unit3.html" class="nav__href">3.Оператор If, else, switch case - выбор в JavaScript</a></li>
+            <li class="nav__page"><a href="unit4.html" class="nav__href">4.Работаем с формами: input, range, textarea, checkbox...</a></li>
+            <li class="nav__page"><a href="unit5.html" class="nav__href">5.Циклы в JavaScript (часть 1)</a></li>
+            <li class="nav__page"><a href="unit6.html" class="nav__href">6.Вложенные циклы в JavaScript (часть 2)</a></li>
+            <li class="nav__page"><a href="unit7.html" class="nav__href">7.Функции и все о них</a></li>
+            <li class="nav__page"><a href="unit8.html" class="nav__href">8.Цикл While, Do While</a></li>
+            <li class="nav__page"><a href="unit9.html" class="nav__href">9.Работаем с DOM</a></li>
+            <li class="nav__page"><a href="unit10.html" class="nav__href">10.Массивы в JavaScript</a></li>
+            <li class="nav__page"><a href="unit11.html" class="nav__href">11.Добавление и удаление элементов в массиве, pop, push,splice</a></li>
+            <li class="nav__page"><a href="unit12.html" class="nav__href">12.Двумерные массивы</a></li>
+            <li class="nav__page"><a href="unit13.html" class="nav__href">13.Ассоциативный массив (объект) в JavaScript</a></li>
+            <li class="nav__page"><a href="unit14.html" class="nav__href">14.Практика по массивам - получаем прогноз погоды по API</a></li>
+            <li class="nav__page"><a href="unit15.html" class="nav__href">15.Set в JavaScript</a></li>
+            <li class="nav__page"><a href="unit16.html" class="nav__href">16.Перебор массивов: for, for in, for of</a></li>
+            <li class="nav__page"><a href="unit17.html" class="nav__href">17.Методы массивов: map, filter ( часть 1)</a></li>
+            <li class="nav__page"><a href="unit18.html" class="nav__href">18.Методы массивов: join, split, forEach ( часть 2)</a></li>
+            <li class="nav__page"><a href="unit19.html" class="nav__href">19.События мыши в JavaScript</a></li>
+            <li class="nav__page activ__page"><a href="unit20.html" class="nav__href">20.События клавиатуры в JavaScript</a></li>
+            <li class="nav__page"><a href="unit21.html" class="nav__href">21.Краткий обзор touch событий</a></li>
+            <li class="nav__page"><a href="unit22.html" class="nav__href">22.Обрабатываем ошибки с помощью Try Catch</a></li>
+            <li class="nav__page"><a href="unit23.html" class="nav__href">23.LocalStorage. Сохраняем все</a></li>
+            <li class="nav__page  dis__page"><a href="#" class="nav__href">24.Немного теории - работа с POST, GET запросами</a></li>
+            <li class="nav__page  dis__page"><a href="#" class="nav__href">25.AJAX - асинхронный JavaScript</a></li>
+            <li class="nav__page  dis__page"><a href="#" class="nav__href">26.Учим FETCH на практике</a></li>
+            <li class="nav__page  dis__page"><a href="#" class="nav__href">27.Работаем с промисами (Promise)</a></li>
+            <li class="nav__page"><a href="unit28.html" class="nav__href">28.ООП в ES6</a></li>
+            <li class="nav__page  dis__page"><a href="#" class="nav__href">29.Бонусы - замыкания</a></li>
+            <li class="nav__page  dis__page"><a href="#" class="nav__href">30.Бонус - Рекурсия</a></li>
+            <li class="nav__page page_project"><a href="index.html" class="nav__href">Все мини - проекты</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+
+        <section class="task">
+            <p><b>Task 1.</b></p>
+            <p>Дан input .i-1. Напишите функцию t1, которая выводит в .out-1 символ и возвращает его. Во всех последующих задачах - работаем с латиницей и цифрами. </p>
+            <input type="text" class="i-1">
+            <div class="out-1">
+            </div>
+        </section>
+
+        <section class="task">
+            <p><b>Task 2.</b></p>
+            <p>Дан input .i-2. Напишите функцию t2, которая выводит в .out-2 код символа и возвращает его. </p>
+            <input type="text" class="i-2">
+            <div class="out-2">
+            </div>
+        </section>
+
+        <section class="task">
+            <p><b>Task 3.</b></p>
+            <p>Дан input .i-3. Напишите функцию t3, которая выводит на страницу true если введен символ и false если цифра. Для определения - используйте код клавиши. </p>
+            <input type="text" class="i-3">
+            <div class="out-3">
+            </div>
+        </section>
+
+        <section class="task">
+            <p><b>Task 4.</b></p>
+            <p>Дан input .i-4. Напишите функцию t4, которая выводит в .out-4 только символы в нижнем регистре. Т.е. ввели ab4Bci в out получаем ab4bci. </p>
+            <input type="text" class="i-4">
+            <div class="out-4">
+            </div>
+        </section>
+
+        <section class="task">
+            <p><b>Task 5.</b></p>
+            <p>Дан input .i-5. Напишите функцию t5, которая выводит в .out-5 все вводимые символы в верхнем регистре. Т.е. пользователь ввел AbCd и функция выведет ABCD. </p>
+            <input type="text" class="i-5">
+            <div class="out-5">
+            </div>
+        </section>
+
+        <section class="task">
+            <p><b>Task 6.</b></p>
+            <p> Дан input .i-6. Напишите функцию t6, которая выводит в .i-6 только символы в нижнем регистре. </p>
+            <div>
+                <input type="text" class="i-6">
+
+                <div class="out-6">
+                </div>
+        </section>
+
+        <section class="task">
+            <p><b>Task 7.</b></p>
+            <p>Дан input .i-7. Напишите функцию t7, которая выводит в .out-7 случаный символ из массива a7 при каждом вводе символа.</p>
+            <div>
+
+                <input type="text" class="i-7">
+
+                <div class="out-7">
+                </div>
+        </section>
+
+        <section class="task">
+            <p><b>Task 8.</b></p>
+            <p>Дан input .i-8. Напишите функцию t8, которая выводит в .out-8 вводимый в input текст, но заменяет i на 1, o на 0, l на 7.</p>
+            <div>
+
+                <input type="text" class="i-8">
+                <div class="out-8">
+                </div>
+        </section>
+
+        <section class="task">
+            <p><b>Task 9.</b></p>
+            <p>Дан input .i-9. Напишите функцию t8, выводит в .out-9 количество нажатых клавиш стрелка вниз.</p>
+            <div>
+
+                <input type="text" class="i-9">
+                <div class="out-9">
+                </div>
+        </section>
+
+        <section class="task">
+            <p><b>Task 10.</b></p>
+            <p>Дан input .i-10 и изображение 1.png. Добавьте событие на input, при нажатии клавиш стрелка вправо и стрелка влево увеличивать ширину изображения. Клавиши стрелка вверх и вниз - увеличивать высоту изображения. Одно нажатие клавиши - 1px.</p>
+            <div>
+                <input type="text" class="i-10">
+                <div class="div-10 block">
+                    <img src="img/1.png" alt="">
+                </div>
+                <div class="out-10">
+                </div>
+        </section>
+
+
+
+
+        </div>
+        <div>
+            <section class="task task-project">
+                <div class="task task11">
+                    <p><b>Task 11.</b></p>
+                    <p> 1. Выполните в html верстку клавиш клавиатуры. Сверстайте – блок цифровых клавиш от 1 до 0. И ряд клавиш q – p. Добавьте клавишу левый shift, левый alt, левый ctrl, пробел, enter.</p>
+                    <p>2. Добавьте на input .i-11 событие onkeypress или onkeyup или onkeydown ( по вашему выбору). Когда событие происходит ( ввод символа в input) необходимо подсветить ( добавить класс active) клавише с таким символом. Со всех остальных
+                        клавиш – удалить класс active.</p>
+                    <p>3. Если вводится следующий символ – повторить удаление active и подсветить клавишу с введенным символом.</p>
+                    <p>4. Ограничения проекта – тестируются только указанные клавиши в латинской раскладке. Комбинации клавиш не тестируются. Т.е. нажиматься shift+A, ctrl+shift – не будут. Все символы вводятся в нижнем регистре.</p>
+                </div>
+                <div class="keyboard">
+                    <div class="key" data-key="49">1</div>
+                    <div class="key" data-key="50">2</div>
+                    <div class="key" data-key="51">3</div>
+                    <div class="key" data-key="52">4</div>
+                    <div class="key" data-key="53">5</div>
+                    <div class="key" data-key="54">6</div>
+                    <div class="key" data-key="55">7</div>
+                    <div class="key" data-key="56">8</div>
+                    <div class="key" data-key="57">9</div>
+                    <div class="key" data-key="48">0</div>
+                    <div class="key" data-key="81">q</div>
+                    <div class="key" data-key="87">w</div>
+                    <div class="key" data-key="69">e</div>
+                    <div class="key" data-key="82">r</div>
+                    <div class="key" data-key="84">t</div>
+                    <div class="key" data-key="89">y</div>
+                    <div class="key" data-key="85">u</div>
+                    <div class="key" data-key="73">i</div>
+                    <div class="key" data-key="79">o</div>
+                    <div class="key" data-key="80">p</div>
+                    <div class="key alt key_text" data-key="18">alt</div>
+                    <div class="key key_text left-shift" data-key="16">shift</div>
+                    <div class="key key_text return lastitem" data-key="13">enter</div>
+                    <div class="key key_text  left-control" data-key="17">ctrl</div>
+                    <div class="key space lastitem" data-key="32">space</div>
+                </div>
+                <div>
+                    <input type="text" class="i-11 i-project">
+                    <div class="out-11">
+                    </div>
+            </section>
+            </div>
+
+            <script src="unit20.js"></script>
+</body>
+
+</html>

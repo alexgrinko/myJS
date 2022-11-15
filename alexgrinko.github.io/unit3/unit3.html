@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Уроки Лущенко</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h1>Урок от Александра Лущенко</h1>
+            <p>ОПЕРАТОР IF, ELSE, SWITCH CASE - ВЫБОР В JAVASCRIPT</p>
+            <p class="hello">unit 3</p>
+        </div>
+    </header>
+    <nav>
+        <ul class="nav__list">
+            <li class="nav__page"><a href="#" class="nav__href">Стартуем и пишем первую программу</a></li>
+            <li class="nav__page"><a href="#" class="nav__href">Основы ввода данных</a></li>
+            <li class="nav__page activ__page"><a href="/unit3/unit3.html" class="nav__href">Оператор If, else, switch case - выбор в JavaScript</a></li>
+            <li class="nav__page"><a href="/unit4/unit4.html" class="nav__href">Работаем с формами: input, range, textarea, checkbox...</a></li>
+            <li class="nav__page"><a href="/unit5/unit5.html" class="nav__href">Циклы в JavaScript (часть 1)</a></li>
+            <li class="nav__page"><a href="/unit6/unit6.html" class="nav__href">Вложенные циклы в JavaScript (часть 2)</a></li>
+            <li class="nav__page"><a href="/unit7/unit7.html" class="nav__href">Функции и все о них</a></li>
+            <li class="nav__page"><a href="/unit8/unit8.html" class="nav__href">Цикл While, Do While</a></li>
+            <li class="nav__page"><a href="/unit9/unit9.html" class="nav__href">Работаем с DOM</a></li>
+            <li class="nav__page"><a href="/unit10/unit10.html" class="nav__href">Массивы в JavaScript</a></li>
+            <li class="nav__page"><a href="/unit11/unit11.html" class="nav__href">Добавление и удаление элементов в массиве, pop, push,splice</a></li>
+            <li class="nav__page"><a href="/unit12/unit12.html" class="nav__href">Двумерные массивы</a></li>
+            <li class="nav__page"><a href="/unit13/unit13.html" class="nav__href">Ассоциативный массив (объект) в JavaScript</a></li>
+            <li class="nav__page"><a href="/unit14/unit14.html" class="nav__href">Практика по массивам - получаем прогноз погоды по API</a></li>
+            <li class="nav__page"><a href="/unit15/unit15.html" class="nav__href">Set в JavaScript</a></li>
+            <li class="nav__page"><a href="/unit16/unit16.html" class="nav__href">Перебор массивов: for, for in, for of</a></li>
+            <li class="nav__page"><a href="/unit17/unit17.html" class="nav__href">Методы массивов: map, filter ( часть 1)</a></li>
+            <li class="nav__page"><a href="/unit18/unit18.html" class="nav__href">Методы массивов: join, split, forEach ( часть 2)</a></li>
+            <li class="nav__page"><a href="/unit19/unit19.html" class="nav__href">События мыши в JavaScript</a></li>
+            <li class="nav__page"><a href="/unit20/unit20.html" class="nav__href">События клавиатуры в JavaScript</a></li>
+            <li class="nav__page"><a href="/unit21/unit21.html" class="nav__href">Краткий обзор touch событий</a></li>
+            <li class="nav__page"><a href="/unit22/unit22.html" class="nav__href">Обрабатываем ошибки с помощью Try Catch</a></li>
+            <li class="nav__page"><a href="/unit23/unit23.html" class="nav__href">LocalStorage. Сохраняем все</a></li>
+            <li class="nav__page"><a href="/unit24/unit24.html" class="nav__href">Немного теории - работа с POST, GET запросами</a></li>
+            <li class="nav__page"><a href="/unit25/unit25.html" class="nav__href">AJAX - асинхронный JavaScript</a></li>
+            <li class="nav__page"><a href="/unit26/unit26.html" class="nav__href">Учим FETCH на практике</a></li>
+            <li class="nav__page"><a href="/unit27/unit27.html" class="nav__href">Работаем с промисами (Promise)</a></li>
+            <li class="nav__page"><a href="/unit28/unit28.html" class="nav__href">ООП в ES6</a></li>
+            <li class="nav__page"><a href="/unit29/unit29.html" class="nav__href">Бонусы - замыкания</a></li>
+            <li class="nav__page"><a href="/unit30/unit30.html" class="nav__href">Бонус - Рекурсия</a></li>
+        </ul>
+    </nav>
+    <section class="container">
+        <div class="task">
+            <label>сравнение больше 4</label>
+            <input class="task_1" type="text" placeholder="ввод числа">
+            <button class="button_task_1">сравнить</button><br>
+            <input class="answer_task1" type="text" placeholder="результат" disabled>
+        </div>
+        <div class="task">
+            <label>сравнение больше двух чисел</label>
+            <input class="task_21" type="text" placeholder="ввод первого числа">
+            <input class="task_22" type="text" placeholder="ввод второго числа">
+            <button class="button_task_2">сравнить</button><br>
+            <input class="answer_task2" type="text" placeholder="результат" disabled>
+        </div>
+        <div class="task">
+            <label>год твоего рождения</label>
+            <input class="task_4" type="number" placeholder="твой год">
+            <button class="button_task_4">отправить</button><br>
+            <input class="answer_task4" type="text" placeholder="результат" disabled>
+        </div>
+        <div class="task">
+            <label>Задача 5. чило "+" или "-". </label>
+            <input class="task_5" type="number" placeholder="ввод числа">
+            <button class="button_task_5">Go</button><br>
+            <input class="answer_task5" type="text" placeholder="результат" disabled>
+        </div>
+        <div class="task">
+            <label>Задача 6. Проверка на четность. </label>
+            <input class="task_6" type="number" placeholder="ввод числа">
+            <button class="button_task_6">Go</button><br>
+            <input class="answer_task6" type="text" placeholder="результат" disabled>
+        </div>
+        <div class="task">
+            <label>Задача 7. Возведение в степень. </label>
+            <input class="task_71" type="number" placeholder="ввод числа">
+            <input class="task_72" type="number" placeholder="ввод степени">
+            <button class="button_task_7">посчитать</button><br>
+            <input class="answer_task7" type="text" placeholder="результат" disabled>
+        </div>
+        <div class="task">
+            <label>Задача 8. как будет на английском цифра.</label>
+            <select class="task_8">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+        </select>
+            <button class="button_task_8">перевод</button><br>
+            <input class="answer_task8" type="text" placeholder="результат" disabled>
+        </div>
+        <div class="task">
+            <label>Задача 9. Ты из какого подъезда? </label>
+            <input class="task_9" type="number" placeholder="номер квартиры">
+            <button class="button_task_9">узнать</button><br>
+            <input class="answer_task9" type="text" placeholder="номер подъезда" disabled>
+        </div>
+        <div class="task">
+            <label>Задача 10. select</label>
+            <select class="task_10">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+        </select>
+            <button class="button_task_10">ок</button><br>
+            <input class="answer_task10" type="text" placeholder="выбор" disabled>
+        </div>
+        <div class="task">
+            <label>Задача 11. еще select</label>
+            <select class="task_11">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+        </select>
+            <button class="button_task_11">ок</button><br>
+            <input class="answer_task11" type="text" placeholder="выбор" disabled>
+        </div>
+        <div class="task">
+            <label>Задача 12. какой тип данных?</label>
+            <input class="task_12" type="text" placeholder="пиши">
+            <button class="button_task_12">ок</button><br>
+            <input class="answer_task12" type="text" placeholder="узнай" disabled>
+        </div>
+        <div class="task">
+            <label>Задача 13. какой тип данных?</label>
+            <input class="task_13" type="number" placeholder="пиши">
+            <button class="button_task_13">ок</button><br>
+            <input class="answer_task13" type="text" placeholder="узнай" disabled>
+        </div>
+        <div class="task">
+            <label>Задача 14. Калькулятор.</label><br>
+            <input class="task_141" type="text" placeholder="ввод первого числа">
+            <select class="task_143">
+            <option>-</option>
+            <option>+</option>
+            <option>/</option>
+            <option>*</option>
+        </select>
+            <input class="task_142" type="text" placeholder="ввод второго числа"><br>
+            <button class="button_task_14">посчитай</button><br>
+            <input class="answer_task14" type="text" placeholder="результат" disabled>
+        </div>
+        <div class="task">
+            <label>Задача 15. select логика.</label><br>
+            <select class="task_151">
+            <option>1</option>
+            <option>0</option>
+        </select>
+            <select class="task_152">
+            <option>1</option>
+            <option>0</option>
+        </select>
+            <select class="task_153">
+            <option>&&</option>
+            <option>||</option>
+        </select>
+            <button class="button_task_15">посчитай</button><br>
+            <input class="answer_task15" type="text" placeholder="результат" disabled>
+        </div>
+        <div class="task calcul">
+            <input class="answer_calc" type="text" placeholder="0">
+            <button class="button_calc dell gray_calc">AC</button>
+            <button class="button_calc action_calc gray_calc">(</button>
+            <button class="button_calc action_calc gray_calc">)</button>
+            <button class="button_calc action_calc orange_calc">-</button>
+            <button class="button_calc number_calc">7</button>
+            <button class="button_calc number_calc">8</button>
+            <button class="button_calc number_calc">9</button>
+            <button class="button_calc action_calc orange_calc">+</button>
+            <button class="button_calc number_calc">4</button>
+            <button class="button_calc number_calc">5</button>
+            <button class="button_calc number_calc">6</button>
+            <button class="button_calc action_calc orange_calc">/</button>
+            <button class="button_calc number_calc">1</button>
+            <button class="button_calc number_calc">2</button>
+            <button class="button_calc number_calc">3</button>
+            <button class="button_calc action_calc orange_calc multiply_calc">x</button>
+            <button class="button_calc number_calc">0</button>
+            <button class="button_calc action_calc">.</button>
+
+
+            <button class="button_calc button_disabled"></button>
+            <button class="button_calc button_big orange_calc">=</button>
+            <input class="arhiv hidden">
+        </div>
+        <div class="task">
+            <h2>разница datalist и select</h2>
+            <div class="task">
+                <h2>datalist</h2>
+                <label for="123">Твое имя</label>
+                <input type="text" id="123" list="team_list">
+                <datalist id="team_list">>
+                <option>Настя</option>
+                <option>Саша </option>
+                <option>Паша</option>
+                <option>Павлин</option>
+                <option>Павлуша</option>
+                <option>Павел </option>
+            </datalist>
+            </div>
+            <div class="task">
+                <h2>select</h2>
+                <label for="1">Твое имя</label>
+                <select>
+                <option>Настя</option>
+                <option>Саша </option>
+                <option>Паша</option>
+                <option>Павлин</option>
+                <option>Павлуша</option>
+                <option>Павел </option>
+            </select>
+                <input type="color" value="#e66465">
+            </div>
+
+        </div>
+    </section>
+</body>
+<script src="unit3.js"></script>
+
+</html>

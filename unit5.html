@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Уроки Лущенко</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h1>Урок от Александра Лущенко</h1>
+            <p class="hello">unit 5</p>
+            <p>ЦИКЛЫ В JAVASCRIPT (ЧАСТЬ 1)</p>
+        </div>
+    </header>
+    <nav>
+        <ul class="nav__list">
+            <li class="nav__page dis__page"><a href="#" class="nav__href">1.Стартуем и пишем первую программу</a></li>
+            <li class="nav__page dis__page"><a href="#" class="nav__href">2.Основы ввода данных</a></li>
+            <li class="nav__page"><a href="unit3.html" class="nav__href">3.Оператор If, else, switch case - выбор в JavaScript</a></li>
+            <li class="nav__page"><a href="unit4.html" class="nav__href">4.Работаем с формами: input, range, textarea, checkbox...</a></li>
+            <li class="nav__page  activ__page"><a href="unit5.html" class="nav__href">5.Циклы в JavaScript (часть 1)</a></li>
+            <li class="nav__page"><a href="unit6.html" class="nav__href">6.Вложенные циклы в JavaScript (часть 2)</a></li>
+            <li class="nav__page"><a href="unit7.html" class="nav__href">7.Функции и все о них</a></li>
+            <li class="nav__page"><a href="unit8.html" class="nav__href">8.Цикл While, Do While</a></li>
+            <li class="nav__page"><a href="unit9.html" class="nav__href">9.Работаем с DOM</a></li>
+            <li class="nav__page"><a href="unit10.html" class="nav__href">10.Массивы в JavaScript</a></li>
+            <li class="nav__page"><a href="unit11.html" class="nav__href">11.Добавление и удаление элементов в массиве, pop, push,splice</a></li>
+            <li class="nav__page"><a href="unit12.html" class="nav__href">12.Двумерные массивы</a></li>
+            <li class="nav__page"><a href="unit13.html" class="nav__href">13.Ассоциативный массив (объект) в JavaScript</a></li>
+            <li class="nav__page"><a href="unit14.html" class="nav__href">14.Практика по массивам - получаем прогноз погоды по API</a></li>
+            <li class="nav__page"><a href="unit15.html" class="nav__href">15.Set в JavaScript</a></li>
+            <li class="nav__page"><a href="unit16.html" class="nav__href">16.Перебор массивов: for, for in, for of</a></li>
+            <li class="nav__page"><a href="unit17.html" class="nav__href">17.Методы массивов: map, filter ( часть 1)</a></li>
+            <li class="nav__page"><a href="unit18.html" class="nav__href">18.Методы массивов: join, split, forEach ( часть 2)</a></li>
+            <li class="nav__page"><a href="unit19.html" class="nav__href">19.События мыши в JavaScript</a></li>
+            <li class="nav__page"><a href="unit20.html" class="nav__href">20.События клавиатуры в JavaScript</a></li>
+            <li class="nav__page"><a href="unit21.html" class="nav__href">21.Краткий обзор touch событий</a></li>
+            <li class="nav__page"><a href="unit22.html" class="nav__href">22.Обрабатываем ошибки с помощью Try Catch</a></li>
+            <li class="nav__page"><a href="unit23.html" class="nav__href">23.LocalStorage. Сохраняем все</a></li>
+            <li class="nav__page  dis__page"><a href="#" class="nav__href">24.Немного теории - работа с POST, GET запросами</a></li>
+            <li class="nav__page  dis__page"><a href="#" class="nav__href">25.AJAX - асинхронный JavaScript</a></li>
+            <li class="nav__page  dis__page"><a href="#" class="nav__href">26.Учим FETCH на практике</a></li>
+            <li class="nav__page  dis__page"><a href="#" class="nav__href">27.Работаем с промисами (Promise)</a></li>
+            <li class="nav__page"><a href="unit28.html" class="nav__href">28.ООП в ES6</a></li>
+            <li class="nav__page  dis__page"><a href="#" class="nav__href">29.Бонусы - замыкания</a></li>
+            <li class="nav__page  dis__page"><a href="#" class="nav__href">30.Бонус - Рекурсия</a></li>
+            <li class="nav__page page_project"><a href="index.html" class="nav__href">Все мини - проекты</a></li>
+        </ul>
+    </nav>
+    <section class="container">
+        <div class="task">
+            <h2>Задача 1.</h2>
+            <textarea class="input_t1" disabled rows="4" cols="33"></textarea>
+            <button class="button_t1">ok</button>
+        </div>
+        <div class="task">
+            <h2>Задача 2.</h2>
+            <textarea class="input_t2" disabled rows="7" cols="33"></textarea>
+            <button class="button_t2">ok</button>
+        </div>
+        <div class="task">
+            <h2>Задача 3.</h2>
+            <textarea class="input_t3" disabled rows="3" cols="20"></textarea>
+            <button class="button_t3">ok</button>
+        </div>
+        <div class="task">
+            <h2>Задача 4.</h2>
+            <textarea class="input_t4" disabled rows="3" cols="20"></textarea>
+            <button class="button_t4">ok</button>
+        </div>
+        <div class="task">
+            <h2>Задача 5.</h2>
+            <textarea class="input_t5" disabled rows="7" cols="50"></textarea>
+            <button class="button_t5">ok</button>
+        </div>
+        <div class="task">
+            <h2>Задача 6.</h2>
+            <div class="input_t6"> </div>
+            <button class="button_t6">ok</button>
+        </div>
+        <div class="task">
+            <h2>Задача 7.</h2>
+            <p>введи число от 0 до 100</p>
+            <input class="input_t7" type="number" placeholder="введи число">
+            <button class="button_t7">ok</button>
+            <input class="show_t7" type="text" disabled>
+        </div>
+        <div class="task">
+            <h2>Задача 8-9.</h2>
+            <p>введи число от 0 до 100</p>
+            <input class="input_t81" type="number" placeholder="введи число 1">
+            <input class="input_t82" type="number" placeholder="введи число 2">
+            <button class="button_t8">ok</button>
+            <input class="show_t8" type="text" disabled>
+        </div>
+        <div class="task">
+            <h2>Задача 10.</h2>
+            <p>нужно ввести год. покажет четные.</p>
+            <input class="input_t101" type="number" placeholder="введи число 1">
+            <input class="input_t102" type="number" placeholder="введи число 2">
+            <button class="button_t10">ok</button>
+            <input class="show_t10" type="text" disabled>
+        </div>
+        <div class="task">
+            <h2>Задача 11.</h2>
+            <p>div перебор</p>
+            <div class="task_div">
+                <div class="div11 divtask">one</div>
+                <div class="div11 divtask">two</div>
+                <div class="div11 divtask">3</div>
+                <div class="div11 divtask">4</div>
+            </div>
+            <button class="button_t11">ok</button>
+            <input class="show_t11" type="text" disabled>
+        </div>
+        <div class="task">
+            <h2>Задача 12.</h2>
+            <p>div перебор</p>
+            <div class="task_div">
+                <div class="div12 divtask">one</div>
+                <div class="div12 divtask">two</div>
+                <div class="div12 divtask">3</div>
+                <div class="div12 divtask">4</div>
+            </div>
+            <button class="button_t12">цвет</button>
+        </div>
+        <div class="task">
+            <h2>Задача 13.</h2>
+            <p>на 1й, 2й и 3й - рассчитайсь.</p>
+            <input class="input13" type="text" placeholder="солдат 1">
+            <input class="input13" type="text" placeholder="солдат 2">
+            <input class="input13" type="text" placeholder="солдат 3">
+            <button class="button_t13">рассчитайсь</button>
+        </div>
+        <div class="task">
+            <h2>Задача 14.</h2>
+            <input class="show_t14" type="text" disabled><br>
+            <p>В наряд пойдет...</p>
+            <label for="1">солдат 1</label>
+            <input class="input14" name="work" type="radio" id="1" checked value="солдат 1"></d>
+
+            <label for="2">солдат 2</label>
+            <input class="input14" name="work" type="radio" id="2" value="солдат 2">
+
+            <label for="3">солдат 3</label>
+            <input class="input14" name="work" type="radio" id="3" value="солдат 3">
+            <button class="button_t14">приказ</button>
+        </div>
+        <div class="task">
+            <h2>Задача 15.</h2>
+            <textarea class="input_t15" disabled rows="4" cols="33"></textarea>
+            <button class="button_t15">ok</button>
+        </div>
+    </section>
+</body>
+<script src="unit5.js"></script>
+
+</html>

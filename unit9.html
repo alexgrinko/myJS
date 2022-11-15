@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Уроки Лущенко</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+
+            <h1>Урок от Александра Лущенко</h1>
+            <p class="hello">UNIT 9.</p>
+            <p> РАБОТАЕМ С DOM</p>
+        </div>
+    </header>
+    <nav>
+        <ul class="nav__list">
+            <li class="nav__page dis__page"><a href="#" class="nav__href">1.Стартуем и пишем первую программу</a></li>
+            <li class="nav__page dis__page"><a href="#" class="nav__href">2.Основы ввода данных</a></li>
+            <li class="nav__page"><a href="unit3.html" class="nav__href">3.Оператор If, else, switch case - выбор в JavaScript</a></li>
+            <li class="nav__page"><a href="unit4.html" class="nav__href">4.Работаем с формами: input, range, textarea, checkbox...</a></li>
+            <li class="nav__page"><a href="unit5.html" class="nav__href">5.Циклы в JavaScript (часть 1)</a></li>
+            <li class="nav__page"><a href="unit6.html" class="nav__href">6.Вложенные циклы в JavaScript (часть 2)</a></li>
+            <li class="nav__page"><a href="unit7.html" class="nav__href">7.Функции и все о них</a></li>
+            <li class="nav__page"><a href="unit8.html" class="nav__href">8.Цикл While, Do While</a></li>
+            <li class="nav__page activ__page"><a href="unit9.html" class="nav__href">9.Работаем с DOM</a></li>
+            <li class="nav__page"><a href="unit10.html" class="nav__href">10.Массивы в JavaScript</a></li>
+            <li class="nav__page"><a href="unit11.html" class="nav__href">11.Добавление и удаление элементов в массиве, pop, push,splice</a></li>
+            <li class="nav__page"><a href="unit12.html" class="nav__href">12.Двумерные массивы</a></li>
+            <li class="nav__page"><a href="unit13.html" class="nav__href">13.Ассоциативный массив (объект) в JavaScript</a></li>
+            <li class="nav__page"><a href="unit14.html" class="nav__href">14.Практика по массивам - получаем прогноз погоды по API</a></li>
+            <li class="nav__page"><a href="unit15.html" class="nav__href">15.Set в JavaScript</a></li>
+            <li class="nav__page"><a href="unit16.html" class="nav__href">16.Перебор массивов: for, for in, for of</a></li>
+            <li class="nav__page"><a href="unit17.html" class="nav__href">17.Методы массивов: map, filter ( часть 1)</a></li>
+            <li class="nav__page"><a href="unit18.html" class="nav__href">18.Методы массивов: join, split, forEach ( часть 2)</a></li>
+            <li class="nav__page"><a href="unit19.html" class="nav__href">19.События мыши в JavaScript</a></li>
+            <li class="nav__page"><a href="unit20.html" class="nav__href">20.События клавиатуры в JavaScript</a></li>
+            <li class="nav__page"><a href="unit21.html" class="nav__href">21.Краткий обзор touch событий</a></li>
+            <li class="nav__page"><a href="unit22.html" class="nav__href">22.Обрабатываем ошибки с помощью Try Catch</a></li>
+            <li class="nav__page"><a href="unit23.html" class="nav__href">23.LocalStorage. Сохраняем все</a></li>
+            <li class="nav__page  dis__page"><a href="#" class="nav__href">24.Немного теории - работа с POST, GET запросами</a></li>
+            <li class="nav__page  dis__page"><a href="#" class="nav__href">25.AJAX - асинхронный JavaScript</a></li>
+            <li class="nav__page  dis__page"><a href="#" class="nav__href">26.Учим FETCH на практике</a></li>
+            <li class="nav__page  dis__page"><a href="#" class="nav__href">27.Работаем с промисами (Promise)</a></li>
+            <li class="nav__page"><a href="unit28.html" class="nav__href">28.ООП в ES6</a></li>
+            <li class="nav__page  dis__page"><a href="#" class="nav__href">29.Бонусы - замыкания</a></li>
+            <li class="nav__page  dis__page"><a href="#" class="nav__href">30.Бонус - Рекурсия</a></li>
+            <li class="nav__page page_project"><a href="index.html" class="nav__href">Все мини - проекты</a></li>
+        </ul>
+    </nav>
+    <section class="container">
+
+        <div class="task">
+            <h2>Задача 1.</h2>
+            <div class="div-t1">кирпич</div>
+            <button class="button_t1">сделать блоком</button>
+        </div>
+        <div class="task">
+            <h2>Задача 2.</h2>
+            <p> добавляю класс 'ночь'</p>
+            <div class="div-t2"></div>
+            <button class="button_t2">ночь</button>
+        </div>
+        <div class="task">
+            <h2>Задача 3.</h2>
+            <p>удаляю класс</p>
+            <div class="div-t3 div-nigh"></div>
+            <button class="button_t3">день</button>
+        </div>
+        <div class="task">
+            <h2>Задача 4.</h2>
+            <p>тогл</p>
+            <div class="div-t4"></div>
+            <button class="button_t4">день-ночь</button>
+        </div>
+        <div class="task">
+            <h2>Задача 5.</h2>
+            <p>в задаче 4 сейчас день или ночь?</p>
+            <div class="div-t5"></div>
+            <button class="button_t5">узнать</button>
+        </div>
+        <div class="task">
+            <h2>Задача 6.</h2>
+            <p>сколько студентов? (считаем по классу)</p>
+            <p class="stud6">Саша</p>
+            <p class="stud6">Макс</p>
+            <p class="stud6">Миша</p>
+            <p class="stud6">Коля</p>
+            <p class="stud6">Артем</p>
+            <div class="div-t6"></div>
+            <button class="button_t6">посчиать</button>
+        </div>
+        <div class="task">
+            <h2>Задача 7.</h2>
+            <p>одеть форму! (добавим всем один класс)</p>
+            <p class="stud7">Саша</p>
+            <p class="stud7">Макс</p>
+            <p class="stud7">Миша</p>
+            <p class="stud7">Коля</p>
+            <p class="stud7">Артем</p>
+            <button class="button_t7">переодеться</button>
+        </div>
+        <div class="task">
+            <h2>Задача 8.</h2>
+            <p>снять - одеть - снять </p>
+            <p class="stud8">Саша</p>
+            <p class="stud8">Макс</p>
+            <p class="stud8">Миша</p>
+            <p class="stud8">Коля</p>
+            <p class="stud8">Артем</p>
+            <button class="button_t8">одеть</button>
+        </div>
+        <div class="task">
+            <h2>Задача 9 - 10.</h2>
+            <p>выбрать</p>
+            <p class="stud-form-9">Саша</p>
+            <p class="stud-form-9">Макс</p>
+            <p class="stud-form-9">Миша</p>
+            <p class="stud-form-9">Коля</p>
+            <p class="stud-form-9">Артем</p>
+        </div>
+        <div class="task task11">
+            <h2>Задача 11-12.</h2>
+            <p> добавим div с текстом</p>
+            <button class="button_t11">add</button>
+        </div>
+        <div class="task task13">
+            <h2>Задача 13.</h2>
+            <p> добавим div - div</p>
+            <button class="button_t13">add</button>
+        </div>
+        <div class="task task14">
+            <h2>Задача 14.</h2>
+            <p>prepend</p>
+            <button class="button_t14">add</button>
+        </div>
+        <div class="task task15">
+            <h2>Задача 15.</h2>
+            <p>before</p>
+            <button class="button_t15">add</button>
+        </div>
+        <div class="task task16">
+            <h2>Задача 16.</h2>
+            <p>after</p>
+            <button class="button_t16">add</button>
+        </div>
+        <div class="task task17">
+            <h2>Задача 17.</h2>
+            <p>replaceWith</p>
+            <button class="button_t17">add</button>
+        </div>
+        <div class="task task18">
+            <h2>Задача 18 - 19.</h2>
+            <p class="p-task18" data="я из data">вывести data этого 'P' по атрибуту</p>
+            <input class="input18" type="text">
+            <button class="button_t18">add</button>
+        </div>
+        <div class="task task20">
+            <h2>Задача 20.</h2>
+            <p class="p-task20" data="я из data">добавлю новый атрибут title со значенеим 'go'<br>
+                <b>setAttribute</b> </p>
+            <input class="input20" type="text">
+            <button class="button_t20">add</button>
+        </div>
+    </section>
+</body>
+<script src="unit9.js"></script>
+
+</html>

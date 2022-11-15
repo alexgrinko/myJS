@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Уроки Лущенко</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h1>все мини-проекты курса от Александра Лущенко</h1>
+            <p class="hello">JAVASCRIPT v2.0</p>
+        </div>
+    </header>
+    <nav>
+        <ul class="nav__list">
+            <li class="nav__page dis__page"><a href="#" class="nav__href">1.Стартуем и пишем первую программу</a></li>
+            <li class="nav__page dis__page"><a href="#" class="nav__href">2.Основы ввода данных</a></li>
+            <li class="nav__page"><a href="unit3.html" class="nav__href">3.Оператор If, else, switch case - выбор в JavaScript</a></li>
+            <li class="nav__page"><a href="unit4.html" class="nav__href">4.Работаем с формами: input, range, textarea, checkbox...</a></li>
+            <li class="nav__page"><a href="unit5.html" class="nav__href">5.Циклы в JavaScript (часть 1)</a></li>
+            <li class="nav__page"><a href="unit6.html" class="nav__href">6.Вложенные циклы в JavaScript (часть 2)</a></li>
+            <li class="nav__page"><a href="unit7.html" class="nav__href">7.Функции и все о них</a></li>
+            <li class="nav__page"><a href="unit8.html" class="nav__href">8.Цикл While, Do While</a></li>
+            <li class="nav__page"><a href="unit9.html" class="nav__href">9.Работаем с DOM</a></li>
+            <li class="nav__page"><a href="unit10.html" class="nav__href">10.Массивы в JavaScript</a></li>
+            <li class="nav__page"><a href="unit11.html" class="nav__href">11.Добавление и удаление элементов в массиве, pop, push,splice</a></li>
+            <li class="nav__page"><a href="unit12.html" class="nav__href">12.Двумерные массивы</a></li>
+            <li class="nav__page"><a href="unit13.html" class="nav__href">13.Ассоциативный массив (объект) в JavaScript</a></li>
+            <li class="nav__page"><a href="unit14.html" class="nav__href">14.Практика по массивам - получаем прогноз погоды по API</a></li>
+            <li class="nav__page"><a href="unit15.html" class="nav__href">15.Set в JavaScript</a></li>
+            <li class="nav__page"><a href="unit16.html" class="nav__href">16.Перебор массивов: for, for in, for of</a></li>
+            <li class="nav__page"><a href="unit17.html" class="nav__href">17.Методы массивов: map, filter ( часть 1)</a></li>
+            <li class="nav__page"><a href="unit18.html" class="nav__href">18.Методы массивов: join, split, forEach ( часть 2)</a></li>
+            <li class="nav__page"><a href="unit19.html" class="nav__href">19.События мыши в JavaScript</a></li>
+            <li class="nav__page"><a href="unit20.html" class="nav__href">20.События клавиатуры в JavaScript</a></li>
+            <li class="nav__page"><a href="unit21.html" class="nav__href">21.Краткий обзор touch событий</a></li>
+            <li class="nav__page"><a href="unit22.html" class="nav__href">22.Обрабатываем ошибки с помощью Try Catch</a></li>
+            <li class="nav__page"><a href="unit23.html" class="nav__href">23.LocalStorage. Сохраняем все</a></li>
+            <li class="nav__page  dis__page"><a href="#" class="nav__href">24.Немного теории - работа с POST, GET запросами</a></li>
+            <li class="nav__page  dis__page"><a href="#" class="nav__href">25.AJAX - асинхронный JavaScript</a></li>
+            <li class="nav__page  dis__page"><a href="#" class="nav__href">26.Учим FETCH на практике</a></li>
+            <li class="nav__page  dis__page"><a href="#" class="nav__href">27.Работаем с промисами (Promise)</a></li>
+            <li class="nav__page"><a href="unit28.html" class="nav__href">28.ООП в ES6</a></li>
+            <li class="nav__page  dis__page"><a href="#" class="nav__href">29.Бонусы - замыкания</a></li>
+            <li class="nav__page  dis__page"><a href="#" class="nav__href">30.Бонус - Рекурсия</a></li>
+            <li class="nav__page page_project activ__page"><a href="index.html" class="nav__href">Все мини - проекты</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <section class="plagin_page task mini_project">
+            <h2 class="title">Прогноз погоды</h2>
+            <div class="serch-city">
+                <select class="plagin_input" value="Минск" placeholder="выбери город" required="required">
+                    <option>Киев</option>
+                    <option>Берлин</option>
+                    <option>Варшава</option>
+                    <option>Лондон</option>
+                    <option>Житомир</option>
+                    <option>Минск</option>
+                    <option>Портленд</option>
+                    <option>Рига</option>
+                    <option>Москва</option>
+                </select>
+                </datalist>
+            </div>
+            <div class="weather">
+                <p class="city_name">выбери город</p>
+                <p class="degree"></p>
+                <div class="icon-weather">
+                    <img class="img_weather" src="/img/8.svg">
+                </div>
+                <p class="shape">узнай погоду</p>
+            </div>
+        </section>
+        <section class="task mini_project">
+            <div>
+                <h2 class="title">Cлайдер</h2>
+                <div class="div-12-wrapper">
+                    <img src="img/1.png" alt="" class="img-12-min active-img">
+                    <img src="img/2.png" alt="" class="img-12-min">
+                    <img src="img/3.png" alt="" class="img-12-min">
+                    <img src="img/4.png" alt="" class="img-12-min">
+                    <img src="img/5.png" alt="" class="img-12-min">
+                    <img src="img/6.png" alt="" class="img-12-min">
+                </div>
+                <div class="div-12-max">
+                    <img src="img/1.png" alt="" class="img-12-max">
+                </div>
+                <p class="img-12-text"></p>
+                <button class="button-primary prev">Prev</button>
+                <button class="button-primary next">Next</button>
+                <br>
+                <button class="button-primary reset">Reset</button>
+                <div class="out-11">
+                </div>
+            </div>
+        </section>
+        <section class="task mini_project">
+            <h2 class="title">Калькулятор</h2>
+            <div class="task calcul">
+                <input class="answer_calc" type="text" placeholder="0">
+                <button class="button_calc dell gray_calc">AC</button>
+                <button class="button_calc action_calc gray_calc">(</button>
+                <button class="button_calc action_calc gray_calc">)</button>
+                <button class="button_calc action_calc orange_calc">-</button>
+                <button class="button_calc number_calc">7</button>
+                <button class="button_calc number_calc">8</button>
+                <button class="button_calc number_calc">9</button>
+                <button class="button_calc action_calc orange_calc">+</button>
+                <button class="button_calc number_calc">4</button>
+                <button class="button_calc number_calc">5</button>
+                <button class="button_calc number_calc">6</button>
+                <button class="button_calc action_calc orange_calc">/</button>
+                <button class="button_calc number_calc">1</button>
+                <button class="button_calc number_calc">2</button>
+                <button class="button_calc number_calc">3</button>
+                <button class="button_calc action_calc orange_calc multiply_calc">x</button>
+                <button class="button_calc number_calc">0</button>
+                <button class="button_calc number_calc">.</button>
+
+
+                <button class="button_calc button_disabled"></button>
+                <button class="button_calc button_big orange_calc">=</button>
+                <!-- <input class="arhiv hidden"> -->
+            </div>
+        </section>
+        <section>
+            <section class="task task-project mini_project">
+                <h2 class="title">Клавиатура</h2>
+                <div class="task task11">
+                    <div class="keyboard">
+                        <div class="key" data-key="49">1</div>
+                        <div class="key" data-key="50">2</div>
+                        <div class="key" data-key="51">3</div>
+                        <div class="key" data-key="52">4</div>
+                        <div class="key" data-key="53">5</div>
+                        <div class="key" data-key="54">6</div>
+                        <div class="key" data-key="55">7</div>
+                        <div class="key" data-key="56">8</div>
+                        <div class="key" data-key="57">9</div>
+                        <div class="key" data-key="48">0</div>
+                        <div class="key" data-key="81">q</div>
+                        <div class="key" data-key="87">w</div>
+                        <div class="key" data-key="69">e</div>
+                        <div class="key" data-key="82">r</div>
+                        <div class="key" data-key="84">t</div>
+                        <div class="key" data-key="89">y</div>
+                        <div class="key" data-key="85">u</div>
+                        <div class="key" data-key="73">i</div>
+                        <div class="key" data-key="79">o</div>
+                        <div class="key" data-key="80">p</div>
+                        <div class="key alt key_text" data-key="18">alt</div>
+                        <div class="key key_text left-shift" data-key="16">shift</div>
+                        <div class="key key_text return lastitem" data-key="13">enter</div>
+                        <div class="key key_text  left-control" data-key="17">ctrl</div>
+                        <div class="key space lastitem" data-key="32">space</div>
+                    </div>
+                    <div>
+                        <input type="text" class="i-11 i-project">
+                        <div class="out-11">
+                        </div>
+            </section>
+
+        </section>
+        <div class="wow_wrapper">
+            <p class="title">Текст - эффект</p>
+            <div class="img_wow">
+                <div class="file_div task-project task">
+
+                    <img class="file_img" src="/img/1.png">
+                    <div class="input__wrapper">
+                        <input name="file" type="file" name="file" id="input__file" class="input input__file" multiple>
+                        <label for="input__file" class="input__file-button">
+                       
+                       <span class="input__file-button-text">Выберите файл</span>
+                    </label>
+                    </div>
+                </div>
+                <div class="task effect_div">
+                    <div class="effect_img">
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use
+                            a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first
+                            true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always
+                            free from repetition, injected humour, or non-characteristic words etc.There re many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised
+                            words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet
+                            tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum
+                            which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden
+                            in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined
+                            with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injectedare many variations of passages of Lorem Ipsum available,
+                            but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
+                            embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200
+                            Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words
+                            etc.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going
+                            to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this
+                            the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore
+                            always free from repetition, injected humour, or non-characteristic words etc.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>

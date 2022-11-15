@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Уроки Лущенко</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h1>Урок от Александра Лущенко</h1>
+            <p class="hello">unit 13</p>
+            <p>АССОЦИАТИВНЫЙ МАССИВ (ОБЪЕКТ) В JAVASCRIPT</p>
+        </div>
+    </header>
+    <nav>
+        <ul class="nav__list">
+            <li class="nav__page dis__page"><a href="#" class="nav__href">1.Стартуем и пишем первую программу</a></li>
+            <li class="nav__page dis__page"><a href="#" class="nav__href">2.Основы ввода данных</a></li>
+            <li class="nav__page"><a href="unit3.html" class="nav__href">3.Оператор If, else, switch case - выбор в JavaScript</a></li>
+            <li class="nav__page"><a href="unit4.html" class="nav__href">4.Работаем с формами: input, range, textarea, checkbox...</a></li>
+            <li class="nav__page"><a href="unit5.html" class="nav__href">5.Циклы в JavaScript (часть 1)</a></li>
+            <li class="nav__page"><a href="unit6.html" class="nav__href">6.Вложенные циклы в JavaScript (часть 2)</a></li>
+            <li class="nav__page"><a href="unit7.html" class="nav__href">7.Функции и все о них</a></li>
+            <li class="nav__page"><a href="unit8.html" class="nav__href">8.Цикл While, Do While</a></li>
+            <li class="nav__page"><a href="unit9.html" class="nav__href">9.Работаем с DOM</a></li>
+            <li class="nav__page"><a href="unit10.html" class="nav__href">10.Массивы в JavaScript</a></li>
+            <li class="nav__page"><a href="unit11.html" class="nav__href">11.Добавление и удаление элементов в массиве, pop, push,splice</a></li>
+            <li class="nav__page"><a href="unit12.html" class="nav__href">12.Двумерные массивы</a></li>
+            <li class="nav__page activ__page"><a href="unit13.html" class="nav__href">13.Ассоциативный массив (объект) в JavaScript</a></li>
+            <li class="nav__page"><a href="unit14.html" class="nav__href">14.Практика по массивам - получаем прогноз погоды по API</a></li>
+            <li class="nav__page"><a href="unit15.html" class="nav__href">15.Set в JavaScript</a></li>
+            <li class="nav__page"><a href="unit16.html" class="nav__href">16.Перебор массивов: for, for in, for of</a></li>
+            <li class="nav__page"><a href="unit17.html" class="nav__href">17.Методы массивов: map, filter ( часть 1)</a></li>
+            <li class="nav__page"><a href="unit18.html" class="nav__href">18.Методы массивов: join, split, forEach ( часть 2)</a></li>
+            <li class="nav__page"><a href="unit19.html" class="nav__href">19.События мыши в JavaScript</a></li>
+            <li class="nav__page"><a href="unit20.html" class="nav__href">20.События клавиатуры в JavaScript</a></li>
+            <li class="nav__page"><a href="unit21.html" class="nav__href">21.Краткий обзор touch событий</a></li>
+            <li class="nav__page"><a href="unit22.html" class="nav__href">22.Обрабатываем ошибки с помощью Try Catch</a></li>
+            <li class="nav__page"><a href="unit23.html" class="nav__href">23.LocalStorage. Сохраняем все</a></li>
+            <li class="nav__page  dis__page"><a href="#" class="nav__href">24.Немного теории - работа с POST, GET запросами</a></li>
+            <li class="nav__page  dis__page"><a href="#" class="nav__href">25.AJAX - асинхронный JavaScript</a></li>
+            <li class="nav__page  dis__page"><a href="#" class="nav__href">26.Учим FETCH на практике</a></li>
+            <li class="nav__page  dis__page"><a href="#" class="nav__href">27.Работаем с промисами (Promise)</a></li>
+            <li class="nav__page"><a href="unit28.html" class="nav__href">28.ООП в ES6</a></li>
+            <li class="nav__page  dis__page"><a href="#" class="nav__href">29.Бонусы - замыкания</a></li>
+            <li class="nav__page  dis__page"><a href="#" class="nav__href">30.Бонус - Рекурсия</a></li>
+            <li class="nav__page page_project"><a href="index.html" class="nav__href">Все мини - проекты</a></li>
+        </ul>
+    </nav>
+    <section class="container">
+
+        <div class="task">
+            <h2>Задача 1.</h2>
+            <p>При нажатии b-1 выполняете функцию f1. Функция должна вывести в out-1 значение сохраненное под ключем two из массива a1. Возвратите это значение.</p>
+            <pre>
+            a1 = {
+        "one" : 15,
+        "two" : 16,
+        five" : 20
+        };
+            </pre>
+            <button class="b-1">Task-1</button>
+            <div class="out-1"></div>
+        </div>
+        <div class="task">
+            <h2>Задача 2.</h2>
+            <p>При нажатии b-2 выполняете функцию f2. Функция должна вывести в out-2 значение hi из массива a2. Возвратите это значение.</p>
+            <pre>
+            a2 = {
+        "one" : "hello",
+        "two" : "mahai",
+        "five" : "hi"
+        };
+            </pre>
+            <button class="b-2">Task-2</button>
+            <div class="out-2"></div>
+        </div>
+        <div class="task">
+            <h2>Задача 3.</h2>
+            <p>При нажатии b-3 выполняете функцию f3. Функция должна вывести в out-3 значение hi из массива a3. Возвратите это значение. Вывод - через пробел.</p>
+            <pre>
+            a3 = {
+        "one" : "hello",
+        "two" : "mahai",
+        "five" : "hi"
+        };
+            </pre>
+            <button class="b-3">Task-3</button>
+            <div class="out-3"></div>
+        </div>
+        <div class="task">
+            <h2>Задача 4.</h2>
+            <p>Давайте напишем функцию f4, которая будет выводить массив a4 в out-4 при нажатии кнопки b-4. Формат вывода - ключ пробел значение перенос строки +'' <br>'. Функция должна возвращать строку в указанном формате вывода. Обратите внимание на пробел
+                перед br!!!!!!!!</p>
+            <pre>
+            a4 = {
+        "one": "hello",
+        "two": "mahai",
+        "five": "hi",
+        "test": 21,
+        "odd": "hi",
+        "mix": "mix"
+            };
+            </pre>
+            <button class="b-4">Task-4</button>
+            <div class="out-4"></div>
+        </div>
+        <div class="task">
+            <h2>Задача 5.</h2>
+            <p>Функция f4 жестко привязана к массиву a4. Это не удобно. Давайте напишем функцию f5, которая принимает массив как параметр и выводит его в формате указанном в функции в указанный блок (как второй параметр).</p>
+            <pre>
+                </pre>
+            <button class="b-5">Task-5</button>
+            <div class="out-5"></div>
+        </div>
+        <div class="task">
+            <h2>Задача 6.</h2>
+            <p>Добавьте input .i-61 и i-62. При нажатии b-6 выполняете функцию f6. Функция должна получать из i-61 ключ, а из i-62 значение и добавлять его в массив a6. После этого, с помощью функции f5 выводите массив a6 в out-6.</p>
+            <input class="input-61" type="text" placeholder="ключ">
+            <input class="input-62" type="text" placeholder="значение">
+            <button class="b-6">Task-6</button>
+            <div class="out-6"></div>
+        </div>
+        <div class="task">
+            <h2>Задача 7.</h2>
+            <img src="grib.svg" width="50px">
+            <p>Добавьте input .i-7. При нажатии b-7 выполняете функцию f7. Функция должна получать из i-7 ключ. Если такой ключ есть в a7 то выводить 1 в out-7, если нет - 0.</p>
+            <p><i>я сделал проверку грибов на съедобность</i></p>
+            <input class="input-7" type="text" list="mushroom_list7" placeholder="грибы">
+            <datalist id="mushroom_list7">>
+                <option>Белый гриб</option>
+                <option>Рыжик </option>
+                <option>Груздь</option>
+                <option>Лисички</option>
+                <option>Опята</option>
+                <option>Сыроежка </option>
+                <option>Масленок</option>
+                <option>Польский гриб</option>
+                <option>Дождевик</option>
+                <option>Подберезовик </option>
+                <option>Мухомор жемчужный </option>
+                <option>Свинушка тонкая </option>
+                <option>Желчный гриб</option>
+                <option>Бледная поганка</option>
+                <option>Рядовка ядовитая</option>
+                <option>Сатанинский гриб </option>
+                <option>Боровик прекрасный</option>
+                <option>Зонтик чешуйчатый</option>
+                <option>Мицена чистая</option>
+                <option>Боровик ле Галь </option>
+                <option>Мухомор белый</option>
+            </datalist>
+            <button class="b-7">Task-7</button>
+            <div class="out-7"></div>
+        </div>
+        <div class="task">
+            <h2>Задача 8.</h2>
+            <img src="grib.svg" width="50px">
+            <p>Добавьте input .i-8. При нажатии b-8 выполняете функцию f8. Функция должна выводить значение в out-8, если ключ введенный в i-8 есть в массиве, если нет - 0.</p>
+            <p><i>я сделал проверку грибов на съедобность</i></p>
+            <input class="input-8" type="text" list="mushroom_list8" placeholder="грибы">
+            <datalist id="mushroom_list8">>
+                <option>Белый гриб</option>
+                <option>Рыжик </option>
+                <option>Груздь</option>
+                <option>Лисички</option>
+                <option>Опята</option>
+                <option>Сыроежка </option>
+                <option>Масленок</option>
+                <option>Польский гриб</option>
+                <option>Дождевик</option>
+                <option>Подберезовик </option>
+                <option>Мухомор жемчужный </option>
+                <option>Свинушка тонкая </option>
+                <option>Желчный гриб</option>
+                <option>Бледная поганка</option>
+                <option>Рядовка ядовитая</option>
+                <option>Сатанинский гриб </option>
+                <option>Боровик прекрасный</option>
+                <option>Зонтик чешуйчатый</option>
+                <option>Мицена чистая</option>
+                <option>Боровик ле Галь </option>
+                <option>Мухомор белый</option>
+            </datalist>
+            <button class="b-8">Task-8</button>
+            <div class="out-8"></div>
+        </div>
+        <div class="task">
+            <h2>Задача 9.</h2>
+            <img src="grib.svg" width="50px">
+            <p>Добавьте input .i-9. При нажатии b-9 выполняете функцию f9. Функция должна вывести в out-9 все ключи массива a9, которые содержат значение, равное значению в input.i-9. Вывод через пробел. Если значений - нет то выводить пустую строку.</p>
+            <button class="b-91" value="съедобный">съедобные</button>
+            <input class="input-9" type="text" placeholder="список грибов" disabled>
+            <button class="b-92" value="несъедобный">несъедобные</button><br>
+            <button class="b-9">паказать</button>
+            <div class="out-9"></div>
+        </div>
+        <div class="task">
+            <h2>Задача 10.</h2>
+            <img src="grib.svg" width="50px">
+            <p>Давайте напишем полезную функцию f10, которая проверяет есть ли значение в ассоциативном массиве. Фукнция должна возвращать true если есть, и false если нет. Массив и значение передавать функции в качестве параметров.</p>
+            <p><i>а в списке 9, есть грибы по значению:</i></p>
+            <datalist id="mushroom_list10">
+                <option>съедобный</option>
+                <option>несъедобный</option>
+                <option>условно съедобные</option>
+                <option>галлюциногенные</option>
+                <option>чайные</option>
+            </datalist>
+            <input list="mushroom_list10" class="input-10" type="text">
+            <button class="b-10">паказать</button>
+            <div class="out-10"></div>
+        </div>
+        <div class="task">
+            <h2>Задача 11.</h2>
+            <img src="grib.svg" width="50px">
+            <p>При нажатии b-11 выполняете функцию f11. Функция должна получить ключ из i-11 и удалить запись из массива a11 с таким ключем. После этого вывести массив в out-11. Для вывода используйте функцию f5.</p>
+            <p><i>удалим не нужный список:</i></p>
+            <input list="mushroom_list12" class="input-11" type="text">
+            <div class="out-111"></div>
+            <button class="b-11">паказать список</button>
+            <div class="out-11"></div>
+        </div>
+        <div class="task">
+            <h2>Задача 12.</h2>
+            <img src="grib.svg" width="50px">
+            <p>При нажатии b-12 выполняете функцию f12. Функция должна получить значение из i-12 и удалить запись из массива a12 с таким значением. После этого вывести массив в out-12. Для вывода используйте функцию f5.</p>
+            <p><i>удалим не нужный гриб:</i></p>
+            <input list="mushroom_list8" class="input-12" type="text">
+            <datalist id="mushroom_list12">
+                <option>съедобный</option>
+                <option>несъедобный</option>
+            </datalist>
+            <div class="out-121"></div>
+            <button class="b-12">паказать список</button>
+            <div class="out-12"></div>
+        </div>
+        <div class="task">
+            <h2>Задача 13.</h2>
+            <p>При нажатии b-13 выполняете функцию f13. Функция должна в out-13 выводить сумму значений массива a13 (только числа).</p>
+            <button class="b-13-1">показать массив</button>
+            <div class="out-131"></div>
+            <button class="b-13">Task-13</button>
+            <div class="out-13"></div>
+        </div>
+        <div class="task">
+            <h2>Задача 14.</h2>
+            <p>При нажатии b-14 выполняете функцию f14. Функция должна в out-14 выводить нулевые (по индексу) элементы вложенных массивов в a14. Вывод через пробел.</p>
+            <button class="b-14-1">показать массив</button>
+            <div class="out-141"></div>
+            <button class="b-14">Task-14</button>
+            <div class="out-14"></div>
+        </div>
+        <div class="task">
+            <h2>Задача 15.</h2>
+            <p>При нажатии b-15 выполняете функцию f15. Функция должна в out-15 выводить элементы вложенных массивов в a15. Вывод через пробел.</p>
+            <button class="b-15-1">показать массив</button>
+            <div class="out-151"></div>
+            <button class="b-15">Task-15</button>
+            <div class="out-15"></div>
+        </div>
+        <div class="task">
+            <h2>Задача 16.</h2>
+            <p>При нажатии b-16 выполняете функцию f16. Функция должна в out-16 выводить элементы name вложенных массивов в a16. Вывод через пробел.</p>
+            <button class="b-16-1">показать массив</button>
+            <div class="out-161"></div>
+            <button class="b-16">Task-16</button>
+            <div class="out-16"></div>
+        </div>
+        <div class="task">
+            <h2>Task 17.</h2>
+            <p>При нажатии b-17 выполняете функцию f17. Функция должна в out-17 выводить элементы name вложенных массивов в a17 для который age > 30. Вывод через пробел.</p>
+            <pre>let a17 = {
+    "iis8sj": {
+        "name": "Ivan",
+        "age": 27,
+    },
+    "iiss7j": {
+        "name": "Petr",
+        "age": 26,
+    },
+    "s3s8sj": {
+        "name": "Serg",
+        "age": 47,
+    },
+}
+</pre>
+            <div class="out-171"></div>
+            <button class="b-17">Task-17</button>
+            <div class="out-17"></div>
+        </div>
+        <div class="task">
+            <h2>Task 18.</h2>
+            <p>При нажатии b-18 выполняете функцию f18. Функция должна в out-18 вывести станции метро из массива a18 той ветки, которую пользователь ввел в i-18. Вывод станций - через пробел. Если ветка не найдена выводите пустую строку.</p>
+            <pre>"red": ['Akademmistechko', 'Nyvky', 'Universytet', 'Lisova'],
+    "blue": ['Minska', 'Obolon', 'Pochaina', 'Holosiivska'],
+    "green": ['Syrets', 'Zoloti Vorota', 'Klovska', 'Vidubichi']
+</pre>
+            <div class="out-181"></div>
+            <input class="input-18" type="text" placeholder="введи ветку">
+            <button class="b-18">Task-18</button>
+            <div class="out-18"></div>
+        </div>
+        <div class="task">
+            <h2>Task 19.</h2>
+            <p>При нажатии b-19 выполняете функцию f19. Функция должна в out-19 вывести станции метро из массива a19 той ветки, которую пользователь ввел в i-19. Вывод станций - через пробел. Если ветка не найдена выводите пустую строку.</p>
+            <pre>"red": ['Akademmistechko', 'Nyvky', 'Universytet', 'Lisova'],
+    "blue": ['Minska', 'Obolon', 'Pochaina', 'Holosiivska'],
+    "green": ['Syrets', 'Zoloti Vorota', 'Klovska', 'Vidubichi']
+</pre>
+            <div class="out-191"></div>
+            <input class="input-19" type="text" placeholder="введи ветку">
+            <button class="b-19">Task-19</button>
+            <div class="out-19"></div>
+        </div>
+        <div class="task">
+            <h2>Task 20.</h2>
+            <p>При нажатии b-20 выполняете функцию f20. Функция должна в out-20 вывести название станции которые содержат переход на другую ветку. Такие станции маркируются 2. Вывод через пробел.</p>
+            <pre>a20 = {
+                "red": [['Akademmistechko', 1], ['Nyvky', 0], ['Universytet', 3], ['Lisova', 1]],
+                "blue": [['Minska', 1], ['Obolon', 0], ['Pochaina', 2], ['Holosiivska', 0]],
+                "green": [['Syrets', 1], ['Zoloti Vorota', 2], ['Klovska', 0], ['Vidubichi', 1]],
+            }
+</pre>
+            <div class="out-201"></div>
+
+            <button class="b-20">Task-20</button>
+            <div class="out-20"></div>
+        </div>
+    </section>
+</body>
+<script src="unit13.js"></script>
+
+</html>

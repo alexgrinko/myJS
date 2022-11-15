@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Уроки Лущенко</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h1>Урок от Александра Лущенко</h1>
+            <p class="hello">unit 11</p>
+            <p>ДОБАВЛЕНИЕ И УДАЛЕНИЕ ЭЛЕМЕНТОВ В МАССИВЕ, POP, PUSH,SPLICE</p>
+        </div>
+    </header>
+    <nav>
+        <ul class="nav__list">
+            <li class="nav__page dis__page"><a href="#" class="nav__href">1.Стартуем и пишем первую программу</a></li>
+            <li class="nav__page dis__page"><a href="#" class="nav__href">2.Основы ввода данных</a></li>
+            <li class="nav__page"><a href="unit3.html" class="nav__href">3.Оператор If, else, switch case - выбор в JavaScript</a></li>
+            <li class="nav__page"><a href="unit4.html" class="nav__href">4.Работаем с формами: input, range, textarea, checkbox...</a></li>
+            <li class="nav__page"><a href="unit5.html" class="nav__href">5.Циклы в JavaScript (часть 1)</a></li>
+            <li class="nav__page"><a href="unit6.html" class="nav__href">6.Вложенные циклы в JavaScript (часть 2)</a></li>
+            <li class="nav__page"><a href="unit7.html" class="nav__href">7.Функции и все о них</a></li>
+            <li class="nav__page"><a href="unit8.html" class="nav__href">8.Цикл While, Do While</a></li>
+            <li class="nav__page"><a href="unit9.html" class="nav__href">9.Работаем с DOM</a></li>
+            <li class="nav__page"><a href="unit10.html" class="nav__href">10.Массивы в JavaScript</a></li>
+            <li class="nav__page activ__page"><a href="unit11.html" class="nav__href">11.Добавление и удаление элементов в массиве, pop, push,splice</a></li>
+            <li class="nav__page"><a href="unit12.html" class="nav__href">12.Двумерные массивы</a></li>
+            <li class="nav__page"><a href="unit13.html" class="nav__href">13.Ассоциативный массив (объект) в JavaScript</a></li>
+            <li class="nav__page"><a href="unit14.html" class="nav__href">14.Практика по массивам - получаем прогноз погоды по API</a></li>
+            <li class="nav__page"><a href="unit15.html" class="nav__href">15.Set в JavaScript</a></li>
+            <li class="nav__page"><a href="unit16.html" class="nav__href">16.Перебор массивов: for, for in, for of</a></li>
+            <li class="nav__page"><a href="unit17.html" class="nav__href">17.Методы массивов: map, filter ( часть 1)</a></li>
+            <li class="nav__page"><a href="unit18.html" class="nav__href">18.Методы массивов: join, split, forEach ( часть 2)</a></li>
+            <li class="nav__page"><a href="unit19.html" class="nav__href">19.События мыши в JavaScript</a></li>
+            <li class="nav__page"><a href="unit20.html" class="nav__href">20.События клавиатуры в JavaScript</a></li>
+            <li class="nav__page"><a href="unit21.html" class="nav__href">21.Краткий обзор touch событий</a></li>
+            <li class="nav__page"><a href="unit22.html" class="nav__href">22.Обрабатываем ошибки с помощью Try Catch</a></li>
+            <li class="nav__page"><a href="unit23.html" class="nav__href">23.LocalStorage. Сохраняем все</a></li>
+            <li class="nav__page  dis__page"><a href="#" class="nav__href">24.Немного теории - работа с POST, GET запросами</a></li>
+            <li class="nav__page  dis__page"><a href="#" class="nav__href">25.AJAX - асинхронный JavaScript</a></li>
+            <li class="nav__page  dis__page"><a href="#" class="nav__href">26.Учим FETCH на практике</a></li>
+            <li class="nav__page  dis__page"><a href="#" class="nav__href">27.Работаем с промисами (Promise)</a></li>
+            <li class="nav__page"><a href="unit28.html" class="nav__href">28.ООП в ES6</a></li>
+            <li class="nav__page  dis__page"><a href="#" class="nav__href">29.Бонусы - замыкания</a></li>
+            <li class="nav__page  dis__page"><a href="#" class="nav__href">30.Бонус - Рекурсия</a></li>
+            <li class="nav__page page_project"><a href="index.html" class="nav__href">Все мини - проекты</a></li>
+        </ul>
+    </nav>
+    <section class="container">
+
+        <div class="task">
+            <h2>Задача 1.</h2>
+            <p>Есть массив d1, кнопка b-1, input i-1. Напишите функцию f1, которая при нажатии читает i-1 и добавляем его в массив. После чего выводит массив в .out-1. Поскольку мы будем выводить массив d1 неоднократно, то давайте вывод массива сделаем отдельной
+                функцией, showArr - она подготовлена. Изучите ее - это хороший способ оптимизировать код.</p>
+            <pre>
+             <b>d1 = [33,'best', 66, 'best'];</b>
+            </pre>
+            <div class="form-control">Input i-1 <input type="text" class="input_t1"></div>
+            <button class="button-primary b-1">Task-1</button>
+            <div class="out-1"></div>
+        </div>
+        <div class="task">
+            <h2>Задача 2.</h2>
+            <p>Напишите функцию f2, которая применяет метод pop к массиву d1, а затем выводит его (showArr) в .out-2</p>
+            <p><b>удалит последний элемент</b></p>
+
+            <button class="b-2">Task-2</button>
+            <div class="out-2"></div>
+        </div>
+        <div class="task">
+            <h2>Задача 3.</h2>
+            <p>Напишите функцию f3, которая применяет метод shift к массиву d1, а затем выводит его (showArr) в .out-3</p>
+            <p><b>удалит первый элемент</b></p>
+
+            <button class="b-3">Task-3</button>
+            <div class="out-3"></div>
+        </div>
+        <div class="task">
+            <h2>Задача 4.</h2>
+            <p>Напишите функцию f4, которая применяет метод push к массиву d1, данные для массива берите из i-4, а затем выводит его (showArr) в .out-4</p>
+            <p><b>добавит элемент инпута в конец массива </b></p>
+            <input type="text" class="input_t4">
+            <button class="b-4">Task-4</button>
+            <div class="out-4"></div>
+        </div>
+        <div class="task">
+            <h2>Задача 5.</h2>
+            <p>Напишите функцию f5, которая применяет метод unshift к массиву d1, данные для массива берите из i-5, а затем выводит его (showArr) в .out-5</p>
+            <p><b>добавит элемент инпута в начало массива </b></p>
+            <input type="text" class="input_t5">
+            <button class="b-5">Task-5</button>
+            <div class="out-5"></div>
+        </div>
+        <div class="task">
+            <h2>Задача 6.</h2>
+            <p>Напишите функцию f6, которая эмулирует работу метода push применительно к массиву d6. Т.е. добавляет значение из i-6 как последний элемент в массив d6.</p>
+            <p><b>d6 = ['test', 5, 12];</b></p>
+            <input type="text" class="input_t6">
+            <button class="b-6">Task-6</button>
+            <div class="out-6"></div>
+        </div>
+        <div class="task">
+            <h2>Задача 7.</h2>
+            <p>Напишите функцию f7, которая эмулирует метод pop, т.е. удаляет последний элемент массива d7.</p>
+            <p><b>d7 = ['china', 'india', 'brazil', 'japan', 'egypt'];</b></p>
+            <button class="b-7">Task-7</button>
+            <div class="out-7"></div>
+        </div>
+        <div class="task">
+            <h2>Задача 8.</h2>
+            <p>Напишите функцию f8, которая эмулирует работу метода unShift - добавляем значение из i-8 в начало массива d8.</p>
+            <p><b>d8 = [2,'4', 12, 67, 'hello'];</b></p>
+            <input type="text" class="input_t8">
+            <button class="b-8">Task-8</button>
+            <div class="out-8"></div>
+        </div>
+        <div class="task">
+            <h2>Задача 9.</h2>
+            <p>Напишите функцию f9, которая эмулирует работу метода shift - на примере массива d9.</p>
+            <p><b>d9 = [100, 200, 300, 400, 700, 121];</b></p>
+            <button class="b-9">Task-9</button>
+            <div class="out-9"></div>
+        </div>
+        <div class="task">
+            <h2>Задача 10.</h2>
+            <p>Напишите функцию f10, которая применяет к массиву d10 метод reverse и выводит полученный массив в out-10.</p>
+            <p><b>d10 = [3,14,15,92,6];</b></p>
+            <button class="b-10">Task-10</button>
+            <div class="out-10"></div>
+        </div>
+        <div class="task">
+            <h2>Задача 11.</h2>
+            <p>Напишите функцию, которая получает число из input i-11, переводит в число, и с помощью метода indexOf проверяет наличие в массиве d11. Функция выводит в out-11 -1 если такого числа нет в массиве, либо его индекс в массиве.</p>
+            <p><b>d11 = [2,3,4,5,6,7];</b></p>
+            <input type="number" class="input_t11">
+            <button class="b-11">Task-11</button>
+            <div class="out-11"></div>
+        </div>
+        <div class="task">
+            <h2>Задача 12.</h2>
+            <p>Напишите функцию f12, которая эмулирует работу метода indexOf - ищет введенное число в массиве d12 (перебором). Если числа нет - выводит -1, если есть - его позицию в массиве.</p>
+            <p><b>d12 = [6, 62, 60, 70, 1, 5];</b></p>
+            <input type="number" class="input_t12">
+            <button class="b-12">Task-12</button>
+            <div class="out-12"></div>
+        </div>
+        <div class="task">
+            <h2>Задача 13.</h2>
+            <p>Напишите функцию f13, которая эмулирует работу метода reverse. Т.е. создает новый массив на основе d13 с обратным порядком элементов и выводит в out-13.</p>
+            <p><b> d13 = [6, 0, 22, 1, 4, 76]</b></p>
+            <button class="b-13">Task-13</button>
+            <div class="out-13"></div>
+        </div>
+        <div class="task">
+            <h2>Задача 14.</h2>
+            <p>Напишите функцию, которая получает i-14, переводит в число, а потом заполняет массив d14 так, что количество элементов равно введенному числу, и каждый элемент равен 1. Т.е. пользователь ввел 5, массив будет [1,1,1,1,1]. Выведите массив в
+                out-14.
+            </p>
+            <p><b>d14 = [ ];</b></p>
+            <input type="number" class="input_t14">
+            <button class="b-14">Task-14</button>
+            <div class="out-14"></div>
+        </div>
+        <div class="task">
+            <h2>Задача 15.</h2>
+            <p>Напишите функцию f15, которая вначале проверяет, есть ли элемент из i-15 в массиве d15 (переводим в число), а потом - если нет - добавляет его в массив.
+            </p>
+            <p><b>d15 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];</b></p>
+            <input type="number" class="input_t15">
+            <button class="b-15">Task-15</button>
+            <div class="out-15"></div>
+        </div>
+        <div class="task">
+            <h2>Задача 16.</h2>
+            <p>Даны два массива d161 и d162 - используя метод concat - добавьте в массив d16 результат применения concat между массивом d161 и d162.</p>
+            <p><b>d16 = [ ];<br>
+                d161 = [5,6,7,8,9];<br>
+                d162 = [23,24,56,87];</b></p>
+            <button class="b-16">Task-16</button>
+            <div class="out-16"></div>
+        </div>
+        <div class="task">
+            <h2>Задача 17.</h2>
+            <p>Напишите функцию f17, которая эмулирует работу метода concat. Функция должна объедиять массивы d171 и d172 и записывать результат в d17. Для эмуляции используйт цикл</p>
+            <p><b>d17=[ ];<br>
+                d171=['a', 'b', 'c', 'd'];<br>
+                d172=[1,2,3,4,5];</b></p>
+            <button class="b-17">Task-17</button>
+            <div class="out-17"></div>
+        </div>
+        <div class="task">
+            <h2>Задача 18.</h2>
+            <p>Напишите функцию f18, которая получает значение из i-18 и проверяет есть ли такое значение в массиве d18 c использованием метода includes. Результат применения метода - выводится в .out-18.
+            </p>
+            <p><b>d18 = ['b', 'c', '45', 'e', 'z', 'y'];</b></p>
+            <input type="text" class="input_t18">
+            <button class="b-18">Task-18</button>
+            <div class="out-18"></div>
+        </div>
+        <div class="task">
+            <h2>Задача 19.</h2>
+            <p>Напишите фукнцию f19, которая выводит самую длинную строку maxString из массива d19 в out-19.
+            </p>
+            <p><b>d19 = ['Your','payment','method','will','automatically',<br>'be','charged','in','advance','every' ];</b></p>
+            <button class="b-19">Task-19</button>
+            <div class="out-19"></div>
+        </div>
+        <div class="task">
+            <h2>Задача 20.</h2>
+            <p>Напишите функцию f20, которая применяет к массиву d20 метод join с параметрами и соединяет элементы массива в одну строку. Результат выводит в .out-20. Укажите мето так d20.join(''). Обратите внимание - между апострофами нет пробела!!!.</p>
+            <p><b> d20 = [4,5,6,7,8,9,10]</b></p>
+            <button class="b-20">Task-20</button>
+            <div class="out-20"></div>
+        </div>
+    </section>
+</body>
+<script src="unit11.js"></script>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="unit14.css">
+    <title>Уроки Лущенко</title>
+</head>
+
+<body class="project_page">
+    <header>
+        <div class="header">
+            <h1 class="project_title">Урок от Александра Лущенко</h1>
+            <p class="hello">unit 14</p>
+            <p>ПРАКТИКА ПО МАССИВАМ - ПОЛУЧАЕМ ПРОГНОЗ ПОГОДЫ ПО API</p>
+        </div>
+    </header>
+    <nav>
+        <ul class="nav__list">
+            <li class="nav__page"><a href="#" class="nav__href">Стартуем и пишем первую программу</a></li>
+            <li class="nav__page"><a href="#" class="nav__href">Основы ввода данных</a></li>
+            <li class="nav__page"><a href="/unit3/unit3.html" class="nav__href">Оператор If, else, switch case - выбор в JavaScript</a></li>
+            <li class="nav__page"><a href="/unit4/unit4.html" class="nav__href">Работаем с формами: input, range, textarea, checkbox...</a></li>
+            <li class="nav__page"><a href="/unit5/unit5.html" class="nav__href">Циклы в JavaScript (часть 1)</a></li>
+            <li class="nav__page"><a href="/unit6/unit6.html" class="nav__href">Вложенные циклы в JavaScript (часть 2)</a></li>
+            <li class="nav__page"><a href="/unit7/unit7.html" class="nav__href">Функции и все о них</a></li>
+            <li class="nav__page"><a href="/unit8/unit8.html" class="nav__href">Цикл While, Do While</a></li>
+            <li class="nav__page"><a href="/unit9/unit9.html" class="nav__href">Работаем с DOM</a></li>
+            <li class="nav__page"><a href="/unit10/unit10.html" class="nav__href">Массивы в JavaScript</a></li>
+            <li class="nav__page"><a href="/unit11/unit11.html" class="nav__href">Добавление и удаление элементов в массиве, pop, push,splice</a></li>
+            <li class="nav__page"><a href="/unit12/unit12.html" class="nav__href">Двумерные массивы</a></li>
+            <li class="nav__page"><a href="/unit13/unit13.html" class="nav__href">Ассоциативный массив (объект) в JavaScript</a></li>
+            <li class="nav__page activ__page"><a href="/unit14/unit14.html" class="nav__href"><b>Практика</b> по массивам - получаем прогноз погоды по API</a></li>
+            <li class="nav__page"><a href="/unit15/unit15.html" class="nav__href">Set в JavaScript</a></li>
+            <li class="nav__page"><a href="/unit16/unit16.html" class="nav__href">Перебор массивов: for, for in, for of</a></li>
+            <li class="nav__page"><a href="/unit17/unit17.html" class="nav__href">Методы массивов: map, filter ( часть 1)</a></li>
+            <li class="nav__page"><a href="/unit18/unit18.html" class="nav__href">Методы массивов: join, split, forEach ( часть 2)</a></li>
+            <li class="nav__page"><a href="/unit19/unit19.html" class="nav__href">События мыши в JavaScript</a></li>
+            <li class="nav__page"><a href="/unit20/unit20.html" class="nav__href">События клавиатуры в JavaScript</a></li>
+            <li class="nav__page"><a href="/unit21/unit21.html" class="nav__href">Краткий обзор touch событий</a></li>
+            <li class="nav__page"><a href="/unit22/unit22.html" class="nav__href">Обрабатываем ошибки с помощью Try Catch</a></li>
+            <li class="nav__page"><a href="/unit23/unit23.html" class="nav__href">LocalStorage. Сохраняем все</a></li>
+            <li class="nav__page"><a href="/unit24/unit24.html" class="nav__href">Немного теории - работа с POST, GET запросами</a></li>
+            <li class="nav__page"><a href="/unit25/unit25.html" class="nav__href">AJAX - асинхронный JavaScript</a></li>
+            <li class="nav__page"><a href="/unit26/unit26.html" class="nav__href">Учим FETCH на практике</a></li>
+            <li class="nav__page"><a href="/unit27/unit27.html" class="nav__href">Работаем с промисами (Promise)</a></li>
+            <li class="nav__page"><a href="/unit28/unit28.html" class="nav__href">ООП в ES6</a></li>
+            <li class="nav__page"><a href="/unit29/unit29.html" class="nav__href">Бонусы - замыкания</a></li>
+            <li class="nav__page"><a href="/unit30/unit30.html" class="nav__href">Бонус - Рекурсия</a></li>
+        </ul>
+    </nav>
+    <section class="container plagin_page">
+        <h2 class="title">Прогноз погоды</h2>
+        <div class="serch-city">
+            <input class="plagin_input" list="city" type="text" placeholder="Город">
+            <datalist id="city">
+                <!-- <option>Нидерланды	Амстердам</option>
+                <option>Андорра	Андорра-ла-Велья</option>
+                <option>Греция	Афины</option>
+                <option>Сербия	Белград</option>
+                <option>Германия	Берлин</option>
+                <option>Швейцария	Берн</option>
+                <option>Словакия	Братислава</option>
+                <option>Бельгия	Брюссель</option>
+                <option>Венгрия	Будапешт</option>
+                <option>Румыния	Бухарест</option>
+                <option>Лихтенштейн	Вадуц</option>
+                <option>Мальта	Валлетта</option>
+                <option>Польша	Варшава</option>
+                <option>Ватикан	Ватикан</option>
+                <option>Австрия	Вена</option>
+                <option>Литва	Вильнюс</option>
+                <option>Ирландия	Дублин</option>
+                 <option>Хорватия	Загреб</option> -->
+                <option>Киев</option>
+                <!-- <option>Молдавия	Кишинёв</option>
+                <option>Дания	Копенгаген</option>
+                <option>Португалия	Лиссабон</option>
+                <option>Великобритания	Лондон</option>
+                <option>Словения	Любляна</option>
+                <option>Люксембург	Люксембург</option>
+                <option>Испания	Мадрид</option> -->
+                <option>Минск</option>
+                <option>Портленд</option>
+                <!-- <option>Монако	Монако</option>
+                <option>Россия	Москва</option>
+                <option>Норвегия	Осло</option>
+                <option>Франция	Париж</option>
+                <option>Черногория	Подгорица</option>
+                <option>Чехия	Прага</option>
+                <option>Исландия	Рейкьявик</option>
+                <option>Латвия	Рига</option>
+                <option>Италия	Рим</option>
+                <option>Сан-Марино	Сан-Марино</option>
+                <option>Босния и Герцеговина	Сараево</option>
+                <option>Северная Македония	Скопье</option>
+                <option>Болгария	София</option>
+                <option>Швеция	Стокгольм</option>
+                <option>Эстония	Таллин</option>
+                <option>Албания	Тирана</option>
+                <option>Финляндия	Хельсинки</option> --> -->
+            </datalist>
+            <button class="btn-weather">
+                <div>
+                    <svg width="40px"  
+                     viewBox="0 0 600 1300" 
+                 
+                     xmlns:xlink="http://www.w3.org/1999/xlink">
+                     <style type="text/css">
+                      .st0{fill:#41AD49;}
+                    </style><g><path class="st0" 
+                        d="M562,396c0-141.4-114.6-256-256-256S50,254.6,50,396s114.6,256,256,256S562,537.4,562,396L562,396z
+                            M501.7,296.3l-241,241l0,0l-17.2,17.2L110.3,421.3l58.8-58.8l74.5,74.5l199.4-199.4L501.7,296.3L501.7,296.3z"/>
+                        </g></svg>
+                </div>        
+            </button>
+
+        </div>
+        <div class="weather">
+            <p class="city_name">Несвиж</p>
+            <p class="degree">15&deg</p>
+            <div class="icon-weather">
+                <img src="">
+            </div>
+            <p class="shape">ветренно</p>
+        </div>
+    </section>
+    <footer>
+        <div>
+            разработал Alex Grinko
+        </div>
+    </footer>
+</body>
+<script src="unit14.js"></script>
+
+</html>
